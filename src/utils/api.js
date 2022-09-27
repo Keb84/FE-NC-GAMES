@@ -17,7 +17,15 @@ export const getReviews = (category) => {
     }
 }
 export const getCategories = () => {
-    return reviewsApi.get('/categories').then((res) => {
+     return reviewsApi.get('/categories').then((res) => {
+        return res.data
+    })
+}
+
+export const reviewByID = (review_id) => {
+console.log(review_id, 'api')
+     return reviewsApi.get(`/reviews/${review_id}`).then((res) => {
+        console.log(res, 'res')
         return res.data
     })
 }
