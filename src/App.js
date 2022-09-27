@@ -1,20 +1,24 @@
 
 import './App.css';
 import Header from './components/Header';
-import Home from './components/Home';
+
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Nav from './components/Nav';
+
 import AllReviews from './components/AllReviews';
+import Categories from './components/Categories';
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
       <Header /> 
-      <Nav />
+      <Categories/>
       <Routes>
-    <Route path='/' element={<Home />} />
+    {/* <Route path='/' element={<Home />} /> */}
+    
     <Route path='/reviews'element={<AllReviews />}/>
+    <Route path='/categories' element={<Categories/>}/>
+    <Route path='/reviews/:category'element={<AllReviews />}/>
 
       </Routes>
     </div>

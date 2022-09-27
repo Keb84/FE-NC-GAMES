@@ -1,5 +1,6 @@
 
 import {useEffect, useState} from 'react'
+import {useParams} from 'react-router'
 import {getReviews} from '../utils/api'
 import moment from 'moment';
 
@@ -7,16 +8,21 @@ import moment from 'moment';
 function AllReviews () {
     const [reviews, setReviews] = useState([])
 
+    const {category} = useParams()
+    
+
     useEffect(() => {
-        getReviews()
+        getReviews(category)
         .then(({reviews}) => {
+            
             setReviews(reviews)
         }) 
-    }, [])
+    }, [category])
     
     
     return (
         <section>
+           
     <ul>
         
         {reviews.map(review => {
