@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,23 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.App {
+  text-align: center;
+ 
+}
+
+
+
+ul {
+  list-style-type: none; 
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+img {
+  border-radius: 4px;
+  
+  padding: 5px;
+  width: 350px;
+
 }
