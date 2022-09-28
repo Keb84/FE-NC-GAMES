@@ -51,6 +51,9 @@
   text-decoration: none;
   font-size: 17px;
   border-bottom: 3px solid transparent;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  list-style-type: none;
 
 }
 .topNavBar Link {
@@ -60,6 +63,8 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  
+ 
 }
 .topNavBar Link:hover {
   background-color: #ddd;
@@ -83,8 +88,9 @@ img {
 
 }
 h1{
-  background-color: rgb(69, 147, 121);
+  background-color: rgb(98, 197, 171);
   font-size: 40px;
+  
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 }
