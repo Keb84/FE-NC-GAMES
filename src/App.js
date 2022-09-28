@@ -13,13 +13,10 @@ function App() {
     <div className="App">
       <Header /> 
       <Categories/>
-      <Routes>
-    {/* <Route path='/' element={<Home />} /> */}
-    
+      <Routes>      
     <Route path='/reviews'element={<AllReviews />}/>
     <Route path='/categories' element={<Categories/>}/>
     <Route path='/reviews/:category'element={<AllReviews />}/>
-
       </Routes>
     </div>
     </BrowserRouter>

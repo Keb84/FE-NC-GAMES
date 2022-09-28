@@ -4,10 +4,10 @@ import { reviewByID } from "../utils/api"
 
 
 function ReviewCard () {
-const [singleReview, setSingleReview] =useState({})
+    const [singleReview, setSingleReview] =useState({})
 
-const {review_id} = useParams()
-console.log(review_id, 'review card')
+        const {review_id} = useParams()
+
 
 
     useEffect(() => {
