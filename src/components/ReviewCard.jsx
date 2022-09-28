@@ -4,6 +4,7 @@ import { reviewByID } from "../utils/api"
 import { voteOnReview } from "../utils/api"
 
 
+
 function ReviewCard () {
 
     const [singleReview, setSingleReview] =useState({})
@@ -27,6 +28,7 @@ function ReviewCard () {
 
     const {review_id} = useParams()
 
+
     useEffect(() => {
         reviewByID(review_id)
 
@@ -36,6 +38,7 @@ function ReviewCard () {
             setIncVotes(reviews.votes)
         })      
     }, [review_id])
+
 
     return (
         <section>
