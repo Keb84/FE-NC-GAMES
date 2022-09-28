@@ -15,7 +15,7 @@ function Categories () {
     return (
         <section>
             <nav className="topNavBar">
-                <h2>Choose from one of the following categories</h2>
+               
             {categories.map(category => {
                 return <li key={category.slug}>
                     <Link to={`/reviews/${category.slug}`}>{category.slug}</Link>

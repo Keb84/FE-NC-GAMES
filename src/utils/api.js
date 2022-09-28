@@ -23,9 +23,17 @@ export const getCategories = () => {
 }
 
 export const reviewByID = (review_id) => {
-console.log(review_id, 'api')
-     return reviewsApi.get(`/reviews/${review_id}`).then((res) => {
-        console.log(res, 'res')
+
+    return reviewsApi.get(`/reviews/${review_id}`).then((res) => {
+        
         return res.data
     })
+}
+export const voteOnReview = (review_id) => {
+    return reviewsApi.patch(`/reviews/${review_id}`, {inc_votes : 1}).then((res) => {
+        
+        return res.data
+
+    })
+
 }
