@@ -1,6 +1,6 @@
 function Header () {
     return (
-        <h1>The 'Board' Gamer</h1>
+        <h1 className="element"> The 'Board' Gamer </h1>
     )
 }
 

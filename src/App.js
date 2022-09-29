@@ -7,6 +7,7 @@ import ReviewCard from './components/ReviewCard';
 import AllReviews from './components/AllReviews';
 import Categories from './components/Categories';
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -18,7 +19,6 @@ function App() {
     <Route path='/categories' element={<Categories/>}/>
     <Route path='/reviews/:category'element={<AllReviews />}/>
     <Route path='/reviews/singleReview/:review_id' element={<ReviewCard />}/>
-
       </Routes>
     </div>
     </BrowserRouter>

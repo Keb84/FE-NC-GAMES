@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { reviewByID } from "../utils/api"
 import { voteOnReview } from "../utils/api"
+import Comments from "./Comments"
 
 
 
@@ -50,6 +51,7 @@ function ReviewCard () {
         <p>Game category : {singleReview.category}</p>
         <img src={singleReview.review_img_url} alt={singleReview.owner}/>
 
+        <Comments />
         </section>
     )
 }
