@@ -37,3 +37,8 @@ export const voteOnReview = (review_id) => {
     })
 
 }
+export const getComments = (review_id) => {
+    return reviewsApi.get(`/reviews/${review_id}/comments`).then((res) => {
+        return res.data
+    })
+}
