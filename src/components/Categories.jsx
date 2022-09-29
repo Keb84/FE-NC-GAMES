@@ -18,7 +18,7 @@ function Categories () {
             <nav className="topNavBar">
             {categories.map(category => {
                 return <li key={category.slug}>
-                    <Link to={`/reviews/${category.slug}`}>{category.slug}</Link>
+                    <Link className="navText" to={`/reviews/${category.slug}`}>{category.slug}</Link>
                                     
                 </li>
             })}
