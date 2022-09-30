@@ -5,7 +5,7 @@ import {UserContext}from '../contexts/Users'
 function Header () {
     const {loggedInUser, isLoggedIn, setLoggedInUser} = useContext(UserContext)
   
-console.log(loggedInUser)
+
     
     const handleLogOut = () => {
         setLoggedInUser({})
