@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 import { getComments } from '../utils/api'
 import {useParams} from 'react-router-dom'
 import moment from 'moment'
+import AddComment from './AddComment'
 
 
 function Comments () {
@@ -14,7 +15,7 @@ function Comments () {
         .then(({comments}) => {
             setAllComments(comments)
         })
-    }, [review_id])
+    }, [review_id, allComments])
     return (
         <section>
             <ul>
@@ -23,6 +24,7 @@ function Comments () {
 
                     </li>
                 })}
+                <AddComment/>
             </ul>
         </section>
         

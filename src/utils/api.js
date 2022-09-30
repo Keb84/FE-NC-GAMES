@@ -42,3 +42,14 @@ export const getComments = (review_id) => {
         return res.data
     })
 }
+export const postComment = (review_id, author, body) => {
+    return reviewsApi.post(`/reviews/${review_id}/comments`, {username : author, body : body}).then((res) => {
+        
+        return res.data.comment
+    })
+}
+export const allUsers = () => {
+    return reviewsApi.get('/users').then((res) => {
+        return res.data
+    })
+}
