@@ -50,8 +50,8 @@ function ReviewCard () {
         <button onClick={() => handleIncVotes(singleReview.review_id)}>{incVotes}<span aria-label="votes for this review"> 👍</span></button><p>{voteMessage}</p>
         <p>Game category : {singleReview.category}</p>
         <img src={singleReview.review_img_url} alt={singleReview.owner}/>
-
         <Comments />
+
         </section>
     )
 }
