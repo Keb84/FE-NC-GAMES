@@ -41,19 +41,19 @@
 }
 body{
   background-image: linear-gradient(to right, #659DBD, #DAAD86);
-  /* background-color: #DAAD86; */
-}
+  background-color: #DAAD86; 
+} 
 
   
 .navBarTitle{
   background-image: linear-gradient(to right, #659DBD, #DAAD86);;
   text-decoration: underline;
-}
+} 
 .topNavBar {
-  background-image: linear-gradient(to right, #DAAD86, #FBEEC1);;
+  background-image: linear-gradient(to right, #DAAD86, #FBEEC1);; 
   /* border : double black;
-  border-width: thick; */
-  /* box-shadow: 5px 10px #FBEEC1; */
+  border-width: thick; 
+   box-shadow: 5px 10px #FBEEC1; */
   list-style: none;
   display: grid;
   font-family: 'Amiri', serif;
@@ -63,12 +63,10 @@ body{
   list-style-type: none;
   padding-top: 10px;
   padding-bottom: 10px;
-  
-  
-  
+     
 
-}
-.topNavBar Link {
+} 
+ .topNavBar Link {
   float: left;
   
   text-align: center;
@@ -78,23 +76,23 @@ body{
   font-family: 'Inter Tight', sans-serif;
   
  
-}
+} 
 .topNavBar Link:hover {
   background-color: #ddd;
   color: black;
 
-}
+} 
 #light{
   background-image: linear-gradient(to right, #659DBD, #DAAD86);;
-}
-#dark{
+} 
+ #dark{
   background-image: linear-gradient(to right, #0f3f5b, #764921);
-}
-.container{
+} 
+ .container{
   position: relative;
   text-align: center;
   color: white;
-}
+} 
 
 
 ul {
@@ -102,14 +100,14 @@ ul {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   
-}
-img {
+} 
+ img {
   border-radius: 4px;
   border-radius: 30%;
   padding: 5px;
   width: 350px;
 
-}
+} 
 h1{
   background-image: linear-gradient(to right, #659DBD, #DAAD86);;
   font-size: 40px;
@@ -117,13 +115,27 @@ h1{
   
   color: #FBEEC1;
   text-shadow: 2px 2px 5px black;
-}
-.element::before{
+} 
+ .element::before{
   content : "♣";
 }
 .element::after{
   content : "♠";
-}
+} 
   
- 
+/* .App {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content auto auto;
+  
+}
+
+@media only screen and (min-width: 600px) {
+  .App {
+    grid-template-columns: 25% 75%;
+    grid-template-rows: min-content auto;
+    
+  }
+} */
+
   
