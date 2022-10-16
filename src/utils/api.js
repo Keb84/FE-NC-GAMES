@@ -49,3 +49,8 @@ export const allUsers = () => {
         return res.data
     })
 }
+export const deleteComment  = (comment_id) => {
+    return reviewsApi.delete(`/comments/${comment_id}`).then((res) => {
+        return res.data
+    })
+} 

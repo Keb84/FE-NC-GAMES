@@ -13,7 +13,7 @@ const ToggleTheme =() => {
         })
     }
     return (
-        <button  onClick={toggleTheme} className={`button__${theme}`}>Dark mode?</button>
+        <button  onClick={toggleTheme} className={`button__${theme}`}></button>
         )
     }
         export default ToggleTheme
